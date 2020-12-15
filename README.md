@@ -1,7 +1,7 @@
-What is a static array?
+##What is a static array?
 - a fixed length container containing n elements indexable from the range [0, n - 1].
 
-What is meant by being indexable?
+##What is meant by being indexable?
 - this means that each slot/index in the array can be referenced with a number.
 
 When and where is a static array used?
