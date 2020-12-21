@@ -34,4 +34,9 @@
 
 var minStartValue = function (nums) {
 
+    for (let i = 1; i < nums.length; i++) {
+        nums[i] = nums[i] + nums[i - 1];
+    }
+
+    return Math.max(-Math.min(...nums) + 1, 1);
 };
