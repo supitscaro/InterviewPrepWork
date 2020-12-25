@@ -14,16 +14,17 @@
 // Output: 0
 
 var countPrimes = function (n) {
+    let count = 0;
+    let mark = new Array(n + 1).fill(false); // creates an array filled with false of n + 1 values
 
-}
-
-function isPrime(num) {
-    let sqrt = Math.floor(Math.sqrt(num));
-    for (let i = 2; i < sqrt; i++) {
-        if (num % i === 0) {
-            return false;
+    for (let i = 2; i < n; i++) {
+        if (!mark[i]) { // if there's no mark[i] then do next loop
+            for (let j = i * i; j < n; j++) { // for each num of i * i, we set mark[j] to true
+                mark[j] = true;
+            }
+            count++;
         }
     }
 
-    return true;
+    return count;
 }
