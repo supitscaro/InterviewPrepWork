@@ -17,5 +17,15 @@
 // Output: 1
 
 var singleNum = function (nums) {
+    nums.sort((a, b) => a - b);
 
-};
+    for (let i = 0; i < nums.length; i += 2) {
+        let firstNum = nums[i];
+        let secondNum = nums[i + 1];
+        if (firstNum !== secondNum) {
+            return firstNum;
+        }
+    }
+}
+
+// LEARN ABOUT BITWISE OPERATORS
