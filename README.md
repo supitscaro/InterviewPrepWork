@@ -1,6 +1,6 @@
 # Big O
 
-[Link to Geeks for Geeks](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/ "Big O Measuring Performance")
+[Big O Measuring Performance](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/ "Big O Measuring Performance")
 
 ## Measuring Performance (Time Complexity)
 
