@@ -13,7 +13,7 @@
 1. Define the function
     - count the number of expression executions
 
-![Big O](/Users/carolinemendez/Desktop/InterviewPrep/images/bigOAcademind.png)
+![Big O](images/bigOAcademind.png)
 
 # Data Structures
 
