@@ -3,7 +3,17 @@
 [Big O Measuring Performance](https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/ "Big O Measuring Performance")
 
 ## Measuring Performance (Time Complexity)
+- **O(n^2)**: You ask the first person of the class if they have the pen, then you ask this person about the other 99 people in the classroom if they have that pen.
 
+- **O(n)**: Going and asking each student individually.
+
+- **O(log n)**: I divide the class into two groups. I ask if the pen is on the left or the right side of the classroom. Then I take that group and divide that group into two and ask again, and so on until I'm left with one person who has the pen.
+
+## Deriving Big O (Asymptotic Analysis)
+1. Define the function
+    - count the number of expression executions
+
+![Big O](/Users/carolinemendez/Desktop/InterviewPrep/images/bigOAcademind.png)
 
 # Data Structures
 
