@@ -12,6 +12,9 @@
 ## Deriving Big O (Asymptotic Analysis)
 1. Define the function
     - count the number of expression executions
+    - T = a * n + b
+2. Find the fasted growing term
+    - T = **a*n** + b
 
 ![Big O](images/bigOAcademind.png)
 
