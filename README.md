@@ -15,8 +15,14 @@
     - T = a * n + b
 2. Find the fasted growing term
     - T = **a*n** + b
+3. Remove the coefficient
+    - T = n
 
 ![Big O](images/bigOAcademind.png)
+
+## Using Big O to Compare Algorithms
+
+![Compare Algorithms](images/comparingAlgorithms.png)
 
 # Data Structures
 
