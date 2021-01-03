@@ -183,3 +183,61 @@ using a technique called hashing.
 
 ### Can I use another data structure to model the bucket behavior required for the separate chaining method?
 - Of course, common data structures used instead of a linked list include: arrays, binary trees, self-balancing trees, etc. You can even go with a hybrid approach like Java's HashMap. However, note that some of these are much more memory intensive and complex to implement than a simple linked list which is why they may be less popular.
+
+
+# JavaScript Functions and Methods
+
+### forEach()
+- calls a function once for each element in an array, in order.
+- another way of looping through an array
+
+
+### .filter()
+- creates an array filled with all array elements that pass a test
+- array.filter(callback(element, index, arr), thisValue)
+- callback: holds the function to be called for each of element of the array
+- element: holds the value of the elements being processed currently.
+- index: optional, holds the index of the currentValue element in the array starting from 0
+- arr: optional, holds the complete array on which array.every is called
+- thisValue: optional, holds the context to be passed as this to be used while executing the callback function.
+
+### .replace()
+- searches a string for a specified value and returns a new string where the specified values are replaced
+
+### .reduce()
+-
+
+### .includes()
+
+### .map()
+
+### .every()
+
+### .has()
+- How to check if an element is in a set
+
+### new Set()
+- When values are passed to the Set function, they remain unique.
+- Repeating values are removed.
+- Contains only distinct elements/objects with no need of being allocated by index
+- Considered as "keyed collection"
+
+## Set Methods
+
+### add()
+- Set needs to check through all members to make sure there won't be any duplicates
+- Generally takes O(n) running time
+
+### size()
+- returns the number of unique elements in a Set.
+
+### has()
+- Returns a boolean indicating if an element with specified value exists in the Set
+
+### forEach()
+
+### delete()
+- Removes a specific given element from Set.
+
+### clear()
+- Removes all elements from Set.
