@@ -205,9 +205,14 @@ using a technique called hashing.
 - searches a string for a specified value and returns a new string where the specified values are replaced
 
 ### .reduce()
--
+- array.reduce((total, amount) => total + amount)
+- used to apply a function to each element in the array to reduce the array to a single value
 
 ### .includes()
+- array.includes(valueToSearchFor, fromIndex)
+- available for arrays and strings
+- will check if an array or string includes the specific value that was provided.
+- returns a boolean: true if it includes, flase if it doesn't
 
 ### .map()
 
@@ -233,8 +238,6 @@ using a technique called hashing.
 
 ### has()
 - Returns a boolean indicating if an element with specified value exists in the Set
-
-### forEach()
 
 ### delete()
 - Removes a specific given element from Set.
