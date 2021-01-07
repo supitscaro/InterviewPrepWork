@@ -191,7 +191,6 @@ using a technique called hashing.
 - calls a function once for each element in an array, in order.
 - another way of looping through an array
 
-
 #### .filter()
 - creates an array filled with all array elements that pass a test
 - array.filter(callback(element, index, arr), thisValue)
@@ -217,9 +216,19 @@ using a technique called hashing.
 #### .map()
 
 #### .every()
+- checks if all elements in an array pass a test (provided as a function)
+- executes the function once for each element present in the array
+    - if it finds an array element where the function returns a false value, every() returns false and does not check the remaining values
+    - if no false occur, every() returns true
 
 #### .has()
 - How to check if an element is in a set
+
+### .sort()
+- sorts the items of an array
+- can be alphabetic or numeric sort, either ascending or descending
+- by default, it sorts value as strings in alphabetical and ascending order
+
 
 ## Set
 ![Set explained](https://javascript.info/map-set)
