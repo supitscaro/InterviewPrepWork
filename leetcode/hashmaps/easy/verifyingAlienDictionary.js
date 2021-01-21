@@ -27,5 +27,21 @@
 // character which is less than any other character (More info).
 
 var isAlienSorted = function (words, order) {
+    for (let i = 1; i < words.length; i++) {
+        let firstWord = words[i - 1];
+        let secondWord = words[i];
+        let maxLen = Math.max(firstWord, secondWord);
 
+        for (let j = 0; j < maxLen; j++) {
+            let indexOne = order.indexOf(firstWord[j]);
+            let indexTwo = order.indexOf(secondWord[j]);
+
+            if (indexOne > indexTwo) return false;
+            else if (indexOne < indexTwo) {
+                j = maxLen;
+            }
+        }
+    }
+
+    return true;
 }
