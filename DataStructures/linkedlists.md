@@ -19,7 +19,7 @@
 ## Singly Linked Lists
 - Singly linked lists only hold a reference to the next node. In the implementation you always maintain a reference to the head to the linked list and a reference to the tail nose for quick additions/removals.
 
-![Singly Linked List](images/linkedlist.png)
+![Singly Linked List](./images/linkedlist.png)
 
 ### Pros
 - Uses less memory
@@ -39,7 +39,7 @@
 ## Doubly Linked Lists
 - With a doubly linked list each node holds a reference to the next and previous node. In the implementation you always maintain a reference to the head and the tail of the doubly linked list to do quick additions/removals from both ends of your list.
 
-![Doubly Linked Lists](images/doublylinked.png)
+![Doubly Linked Lists](./images/doublylinked.png)
 
 ### Pros
 - Can be traversed backwards
