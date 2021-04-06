@@ -1,5 +1,5 @@
 ## Trees
 
-![Tree Labeled](images/treeLabeled.png)
+![Tree Labeled](../images/treeLabeled.png)
 
-![Types of Trees](images/comparingAlgorithms.png)
+![Types of Trees](../images/comparingAlgorithms.png)

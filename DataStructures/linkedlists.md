@@ -39,7 +39,7 @@
 ## Doubly Linked Lists
 - With a doubly linked list each node holds a reference to the next and previous node. In the implementation you always maintain a reference to the head and the tail of the doubly linked list to do quick additions/removals from both ends of your list.
 
-![Doubly Linked Lists](images/doublylinked.png)
+![Doubly Linked Lists](../images/doublylinked.png)
 
 ### Pros
 - Can be traversed backwards
