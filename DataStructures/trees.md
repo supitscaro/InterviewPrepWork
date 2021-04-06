@@ -2,7 +2,7 @@
 
 ![Tree Labeled](../images/treeLabeled.png)
 
-![Types of Trees](../images/comparingAlgorithms.png)
+![Types of Trees](../images/typesOfTrees.png)
 
 ### Describe a Tree
 
