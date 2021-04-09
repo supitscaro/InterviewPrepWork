@@ -19,9 +19,15 @@
 
 #### Pre Order - before we visit the left and right subtree, we visit the node
 - Self => Left => Right
+- if you need to explore the roots before inspecting any leaves, use pre-order
+- you will get all the roots before all of the leaves
 
 #### In Order - we visit the node in the mid of the left and right subtree
 - Left => Self => Right
+- if you have to flatten the tree back into its original sequence in nodes, use in order.
+- this would flatten the tree in the same way it was created
 
 #### Post Order - after we visit the left and right subtree, we visit the node
 - Left => Right => Node
+- if you need to see all the leaves before any nodes, use post-order
+- you don't waste time inspecting roots in search for leaves
