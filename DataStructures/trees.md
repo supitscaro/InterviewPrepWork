@@ -31,3 +31,28 @@
 - Left => Right => Node
 - if you need to see all the leaves before any nodes, use post-order
 - you don't waste time inspecting roots in search for leaves
+
+
+![Binary Tree](../images/BST.png)
+
+#### Pre Order Recursive Traversal
+
+- We start our traversal at Node 6. Node 6 will visit itself and then it's left subtree and right subtree.
+    - We're solving this recursively so we won't visit its right subtree until we've gone through its left subtree.
+- We visit Node 6 then go to its left subtree, which will take us to Node 3.
+- We visit Node 3 then go to its left subtree, which takes us to Node 1.
+- Once at Node 1, we visit Node 1, then its left subtree.
+    - Node 1 has no left subtree, so we head back to Node 3 and check its right subtree.
+    - Node 1 has no right subtree, so we head back up to Node 3
+- Once at Node 3, we visit its right subtree. This is because we know Node 3 has visited itself and its left subtree, so all we have left is to visit the right subtree.
+- Once at Node 5, we visit Node 5, then its left subtree.
+    - Node 5 has no left subtree, so we head back to Node 5 and check its right subtree.
+    - Node 5 has no right subtree, so we head back up to Node 6.
+- We know Node 6 has visited itself and its left subtree, so we only have to visit its right subtree.
+- We visit Node 9 then move to its left subtree.
+- Once at Node 7, we visit Node 7, then move to its left subtree.
+    - Node 7 has no left subtree, so we head back to Node 7 and check its right subtree
+    - Node 7 has no right subtree, so we head back up to Node 9.
+- Once at Node 9, we know it has visited itself and its left subtree, so we head to the right subtree.
+- Once at Node 11, we visit Node 11, then move to its left subtree
+    - Node 11 has no left subtree, so we visit its
