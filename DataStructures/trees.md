@@ -55,4 +55,7 @@
     - Node 7 has no right subtree, so we head back up to Node 9.
 - Once at Node 9, we know it has visited itself and its left subtree, so we head to the right subtree.
 - Once at Node 11, we visit Node 11, then move to its left subtree
-    - Node 11 has no left subtree, so we visit its
+    - Node 11 has no left subtree, so we head back up to Node 11 and visit its right subtree
+    - Node 11 has no right subtree, so we head back up to Node 9
+- Once we get to Node 9, we have visited the node, its left subtree and its right subtree, so we head back up to Node 6
+- We made it back to Node 6, so our job here is done
