@@ -48,6 +48,11 @@ Meaning: Row E, Column A should be the same value as Row A, Column E
 
 If the edges have direction, note that ```matrix[i][j]``` is not the same as ```matrix[j][i]```
 
+##### Pros and Cons
+One thing to note here is that this type of matrix is pretty easy to read and follow. Looking up, inserting, and removing an edge can be done in constant time or O(1).
+
+However,looking at the previous matrix example, you can see how much space is taken that contain the value 0. This matrix is mostly filled with 0s and they take up space that's not necessarily needed.
+
 ## Depth First Search
 - With this, we use a stack.
     - This stack can either be our own or the call stack via recursion
