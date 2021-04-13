@@ -41,6 +41,10 @@ let matrix = [
 /*F*/    [0, 0, 0, 0, 1, 1]
 ];
 ```
+We can tell if the graph is directed or undirected based on whether the matrix is symmetric or not.
+If the values on both sides of the main diagonal are the same, the matrix is considered symmetric.
+
+Meaning: Row E, Column A should be the same value as Row A, Column E
 
 If the edges have direction, note that ```matrix[i][j]``` is not the same as ```matrix[j][i]```
 
