@@ -25,6 +25,23 @@ Directed edges can be represented as an ordered pair, such as (A, B). *A* would 
 
 Undirected edges are represented as {A, B}
 
+### Adjacency Matrix
+This matrix is a representation of which nodes in a graph contain edges between them
+- once we know the two nodes we want to find an edge between, we find the value the two nodes intersect at
+- the values in this matrix are booleans, or 0s and 1s. If there's a 1, that means there's an edge between the two nodes. If there's a 0, that means there's no edge between the two nodes
+
+```javascript
+let matrix = [
+/*        A  B  C  D  E  F   */
+/*A*/    [1, 1, 1, 0, 1, 0],
+/*B*/    [0, 1, 0, 0, 0, 0],
+/*C*/    [0, 1, 1, 1, 0, 0],
+/*D*/    [0, 0, 0, 1, 0, 0],
+/*E*/    [1, 0, 0, 0, 1, 0],
+/*F*/    [0, 0, 0, 0, 1, 1]
+];
+```
+
 ## Depth First Search
 - With this, we use a stack.
     - This stack can either be our own or the call stack via recursion
