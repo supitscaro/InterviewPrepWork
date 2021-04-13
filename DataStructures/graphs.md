@@ -12,6 +12,19 @@
 - Weighted graph: edges of the graph have weights
 - Unweighted graph: edges of the graph have no weights
 
+### Graphs Explanations
+- There are no rules regarding the connection among the nodes or vertices in a graph.
+- The edges in a graph are the lines that connect each node or vertex. These edges can connect the nodes in any way possible.
+
+#### Two Types of Edges
+There are two types of edges: directed and undirected.
+- Directed: connections that are one way. One point is the origin and the other point is the end point
+- Undirected: connections are two ways.
+
+Directed edges can be represented as an ordered pair, such as (A, B). *A* would be the origin whereas *B* is the destination. Remember that directed edges only go one way, so we do not have a path from B to A; we only have a path from A to B. If we wanted to have a direction from B to A, we would need to add another edge pointing from B to A.
+
+Undirected edges are represented as {A, B}
+
 ## Depth First Search
 - With this, we use a stack.
     - This stack can either be our own or the call stack via recursion
