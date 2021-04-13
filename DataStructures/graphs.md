@@ -42,6 +42,8 @@ let matrix = [
 ];
 ```
 
+If the edges have direction, note that ```matrix[i][j]``` is not the same as ```matrix[j][i]```
+
 ## Depth First Search
 - With this, we use a stack.
     - This stack can either be our own or the call stack via recursion
