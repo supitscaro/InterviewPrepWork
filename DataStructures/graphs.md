@@ -53,6 +53,9 @@ One thing to note here is that this type of matrix is pretty easy to read and fo
 
 However,looking at the previous matrix example, you can see how much space is taken that contain the value 0. This matrix is mostly filled with 0s and they take up space that's not necessarily needed.
 
+### Adjacency Lists
+This is a hybrid of an adjacency list and an edge list. This is an array of linked lists that shows a representation of a graph and makes it easy to see which other vertices are adjacent to other vertices.
+
 ## Depth First Search
 - With this, we use a stack.
     - This stack can either be our own or the call stack via recursion
