@@ -56,6 +56,14 @@ However,looking at the previous matrix example, you can see how much space is ta
 ### Adjacency Lists
 This is a hybrid of an adjacency list and an edge list. This is an array of linked lists that shows a representation of a graph and makes it easy to see which other vertices are adjacent to other vertices.
 
+- Every single node/vertex will have a reference to all of its neighbors through an adjacent linked list
+
+The structure of an adjacency list makes it very easy to determine all the neighbors of a particular node/vertex.
+
+##### Pros and Cons
+Retrieving a node's neighbors with an adjacency list takes constant time.
+
+
 ## Depth First Search
 - With this, we use a stack.
     - This stack can either be our own or the call stack via recursion
