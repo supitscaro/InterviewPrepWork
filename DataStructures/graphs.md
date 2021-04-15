@@ -60,8 +60,29 @@ This is a hybrid of an adjacency list and an edge list. This is an array of link
 
 The structure of an adjacency list makes it very easy to determine all the neighbors of a particular node/vertex.
 
+```javascript
+let graph = {
+    'a': ['b', 'c', 'e'],
+    'b': [],
+    'c': ['b', 'd'],
+    'd': [],
+    'e': ['a'],
+    'f': ['e']
+};
+```
+- the **'keys'** are the vertex
+- the **'values'** are the neighboring vertices
+
+The values are connected to the keys.
+
 ##### Pros and Cons
 Retrieving a node's neighbors with an adjacency list takes constant time.
+
+This is different when trying to find a specific edge, (x, y). We know that to find a vertex, x, in an adjacency list it takes constant time. Our second step is to check if y is in the adjacency list for node x.
+
+Worst case scenario, y could be at the very end of our list or not even exist, which means this will take O(d) time, where d is the degree of vertex x.
+    - Note: our *degree* is the number of edges that a vertex has, which is also the number of neighboring nodes.
+
 
 
 ## Depth First Search
