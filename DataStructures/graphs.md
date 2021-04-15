@@ -83,8 +83,6 @@ This is different when trying to find a specific edge, (x, y). We know that to f
 Worst case scenario, y could be at the very end of our list or not even exist, which means this will take O(d) time, where d is the degree of vertex x.
     - Note: our *degree* is the number of edges that a vertex has, which is also the number of neighboring nodes.
 
-
-
 ## Depth First Search
 - With this, we use a stack.
     - This stack can either be our own or the call stack via recursion
