@@ -11,6 +11,17 @@ res = list(filter(lambda n: x * 10, num_list)) # returns elements multiplied by 
 print(res)
 ```
 
+#### using predefined function
+```python
+def multiply_by_10(n):
+    return n * 10
+
+num_list = [10, 20, 18, 4, 20]
+
+res = list(filter(multiply_by_10, num_list))
+print(res)
+```
+
 ### Map
 - applies a function to all items in a list
 
