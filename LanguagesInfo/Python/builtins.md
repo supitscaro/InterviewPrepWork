@@ -5,7 +5,10 @@
 
 #### using a lambda function
 ```python
+num_list = [10, 20, 18, 4, 20]
 
+res = list(filter(lambda n: x * 10, num_list)) # returns elements multiplied by 10
+print(res)
 ```
 
 ### Map
