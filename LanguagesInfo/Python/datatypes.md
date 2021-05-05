@@ -66,3 +66,18 @@ c = {4, 5, 9, 6}
 a.intersection(b, c) # {4}
 a & b & c # {4}
 ```
+
+#### Difference of Sets
+- returns the set of all elements that are in one set but not the other
+
+- you can do this in two ways, using .difference() method or - operator.
+
+```python
+a = {1, 2, 3, 30, 300}
+b = {10, 20, 30, 40}
+c = {100, 200, 300, 400}
+
+a.difference(b, c) # {1, 2, 3}
+
+a - b - c # {1, 2, 3}
+```
