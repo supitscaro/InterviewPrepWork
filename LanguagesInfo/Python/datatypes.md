@@ -35,8 +35,34 @@ print(set_two) # {'t', 's', 'e'}
 ```
 
 #### Unions of Sets
+- this returns both sets combined
+
 ```python
 set1 = {'foo', 'bar', 'test'}
 set2 = {'axs', 'ppl', 'txt'}
 ```
 - the union of set1 and set 2 is: `{'foo', 'bar', 'test', 'axs', 'ppl', 'txt'}`
+
+- a set union can be done with the | operator.
+
+```python
+set1 | set2
+# {'foo', 'bar', 'test', 'axs', 'ppl', 'txt'}
+```
+:bangbang: you can use the .union() method to create a union as well, BUT the operator and method have a small difference between them.
+    - when using the | operator, BOTH operands have to be sets.
+    - the .union() method will take any other iterable as an argument, convert it to a set, then do the union.
+
+#### Intersection of Sets
+- this returns the common elements between both sets
+
+- you can do this in two ways, using the & operator or the .intersection() method.
+
+```python
+a = {1, 2, 3, 4}
+b = {4, 5, 7, 7}
+c = {4, 5, 9, 6}
+
+a.intersection(b, c) # {4}
+a & b & c # {4}
+```
