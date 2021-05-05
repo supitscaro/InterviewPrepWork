@@ -39,7 +39,4 @@ print(set_two) # {'t', 's', 'e'}
 set1 = {'foo', 'bar', 'test'}
 set2 = {'axs', 'ppl', 'txt'}
 ```
-- the union of set1 and set 2 is:
-```python
-{'foo', 'bar', 'test', 'axs', 'ppl', 'txt'}`
-``
+- the union of set1 and set 2 is: `{'foo', 'bar', 'test', 'axs', 'ppl', 'txt'}`
