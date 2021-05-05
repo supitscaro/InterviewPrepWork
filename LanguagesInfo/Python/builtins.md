@@ -38,3 +38,11 @@ for i in items:
 items = [1, 2, 3, 4, 5]
 squared = list(map(lambda x: x ** 2, items))
 ```
+
+### Sorted
+- with no additional arguments or parameters, sorted() orders the values in an ascending order
+- the original variable is unchanged. sorted() provides sorted output and does not change the original value in place
+- when called, it provides an ordered list as a return value
+
+#### Key argument
+- this argument expects a function to be passed to it and that function will be used on each value in the list being sorted to determine the resulting order
