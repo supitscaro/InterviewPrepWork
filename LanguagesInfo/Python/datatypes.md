@@ -107,6 +107,17 @@ a - b - c # {1, 2, 3}
     - .remove()
     - .pop()
 
+### Tuples
+- also a collection of ordered arbitrary objects
+
+#### important notes
+- tuples are defined in parenthesis instead of square brackets
+- tuples are immutable
+
+- tuples can also be indexed, sliced, nested, but cannot be modified
+
+#### why use a tuple instead of a list
+- sometimes you don't want data to be modified
 
 ### Dictionaries
 -
