@@ -16,3 +16,10 @@
 #### class attributes
 - these attributes have the same value for all class instances
 - you define these by assigning a value to a variable name outside of `__init__`
+
+### instantiate a class
+- to instantiate a class, all you need to do is invoke the class with an opening and closing parenthesis
+
+### instance methods
+- functions that are defined inside of a class and can only be called from an instance of that class
+- its first parameter is always self
