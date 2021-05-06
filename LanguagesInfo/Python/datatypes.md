@@ -81,3 +81,26 @@ a.difference(b, c) # {1, 2, 3}
 
 a - b - c # {1, 2, 3}
 ```
+
+### Lists
+- a collection of arbitrary objects, similar to an array
+
+#### important notes
+- lists are ordered
+- lists can contain any arbitrary objects
+- list elements can be accessed by index
+- lists can be nested to arbitrary depth
+- lists are mutable
+- lists are dynamic
+
+- Lists are mutable
+- Methods that modify a list:
+    - .append()
+    - .extend()
+    - .insert()
+    - .remove()
+    - .pop()
+
+
+### Dictionaries
+-

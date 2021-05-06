@@ -46,3 +46,8 @@ squared = list(map(lambda x: x ** 2, items))
 
 #### Key argument
 - this argument expects a function to be passed to it and that function will be used on each value in the list being sorted to determine the resulting order
+
+- sorted() example: sorted(iterable, key=None, reverse=False)
+    - the extra parameters must be set using the name and equal sign
+
+### Enumerate
