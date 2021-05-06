@@ -23,3 +23,24 @@
 ### instance methods
 - functions that are defined inside of a class and can only be called from an instance of that class
 - its first parameter is always self
+
+### Getters
+
+#### property decorator
+- we can apply this to a method to make it more readable
+
+```python
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+    @property
+    def desc(self):
+        return f"{self.name} is {self.age} years old"
+
+
+puppy = Dog()
+print(puppy.desc) # versus doing puppy.desc()
+```
