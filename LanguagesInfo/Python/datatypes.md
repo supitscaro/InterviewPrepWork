@@ -13,6 +13,12 @@
 - tuple
 - range
 
+### Primitive Types
+- integer
+- string
+- boolean
+- float
+
 ### Sets
 - sets are unordered
 - every element is unique, no duplicates are allowed
