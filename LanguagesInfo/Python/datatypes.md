@@ -107,6 +107,15 @@ a - b - c # {1, 2, 3}
     - .remove()
     - .pop()
 
+#### List comprehensions
+- this is another way of making lists.
+
+```python
+    lst = ["yes", "plop", "bop", "pop", "no", "it"]
+
+    res = [char for char in lst if len(char) > 2]
+```
+
 ### Tuples
 - also a collection of ordered arbitrary objects
 
