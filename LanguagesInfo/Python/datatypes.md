@@ -125,10 +125,13 @@ a - b - c # {1, 2, 3}
 
 - tuples can also be indexed, sliced, nested, but cannot be modified
 
--
 
 #### why use a tuple instead of a list
 - sometimes you don't want data to be modified
 
 ### Dictionaries
--
+- a key:value pair similar to an object.
+- the key must be unique.
+- the key must also be of a type that is immutable
+- there are no restrictions on dictionary values
+- you can iterate over its keys using a simple for loop
