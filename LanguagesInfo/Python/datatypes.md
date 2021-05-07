@@ -1,17 +1,16 @@
 ### Mutable data types
 - list
 - dictionary
-- set
 - use-defined classes
 
 ### Immutable data types
 - int
 - float
-- decimal
 - bool
 - string
 - tuple
 - range
+- set
 
 ### Primitive Types
 - integer
@@ -121,9 +120,12 @@ a - b - c # {1, 2, 3}
 
 #### important notes
 - tuples are defined in parenthesis instead of square brackets
-- tuples are immutable
+- tuples are immutable, like strings, and cannot be modified
+- you can take portions of an existing tuple to make new tuples
 
 - tuples can also be indexed, sliced, nested, but cannot be modified
+
+-
 
 #### why use a tuple instead of a list
 - sometimes you don't want data to be modified
