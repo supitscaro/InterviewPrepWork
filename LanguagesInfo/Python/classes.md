@@ -25,9 +25,12 @@
 - its first parameter is always self
 
 ### Getters
+- a method that gets a value but looks like a normal property
 
 #### property decorator
 - we can apply this to a method to make it more readable
+- decorators allow us to change the way a method will get invoked
+
 
 ```python
 class Dog:
