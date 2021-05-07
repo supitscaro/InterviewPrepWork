@@ -25,7 +25,8 @@
 - its first parameter is always self
 
 ### Getters
-- a method that gets a value but looks like a normal property
+- a method that gets a value of a property but looks like a normal property
+- this helps to access private attributes from a class
 
 #### property decorator
 - we can apply this to a method to make it more readable
@@ -47,3 +48,8 @@ class Dog:
 puppy = Dog()
 print(puppy.desc) # versus doing puppy.desc()
 ```
+
+### Setters
+- this is a method that gets invoked with the assignment operator
+- this actually sets the value of a property
+- this helps set the value to private attributes in a class
