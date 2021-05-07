@@ -125,7 +125,6 @@ a - b - c # {1, 2, 3}
 
 - tuples can also be indexed, sliced, nested, but cannot be modified
 
-
 #### why use a tuple instead of a list
 - sometimes you don't want data to be modified
 
@@ -135,3 +134,8 @@ a - b - c # {1, 2, 3}
 - the key must also be of a type that is immutable
 - there are no restrictions on dictionary values
 - you can iterate over its keys using a simple for loop
+
+#### dictionary comprehension
+```{resulting keys: resulting value for iteration in iterable}```
+
+- the output portion would be ```resulting keys: resulting value``` which gives us back the key-value pairs
