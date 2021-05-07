@@ -51,3 +51,16 @@ squared = list(map(lambda x: x ** 2, items))
     - the extra parameters must be set using the name and equal sign
 
 ### Enumerate
+- takes two parameters:
+    - iterable: anything that supports iteration
+    - start (optional): starts counting from this number. if omitted, 0 is taken as start
+
+- these enumerate objects can be converted to list and tuples
+
+```python
+grocery = ['bread', 'milk', 'butter']
+enumerated_grocery = enumerate(grocery)
+
+print(list(enumerated_grocery))
+# [(0, 'bread'), (1, 'milk'), (2, 'butter')]
+```
