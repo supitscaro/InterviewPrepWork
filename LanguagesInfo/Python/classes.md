@@ -41,8 +41,8 @@ class Dog:
 
 
     @property
-    def desc(self):
-        return f"{self.name} is {self.age} years old"
+    def get_age(self):
+        return self._age
 
 
 puppy = Dog()
@@ -53,3 +53,25 @@ print(puppy.desc) # versus doing puppy.desc()
 - this is a method that gets invoked with the assignment operator
 - this actually sets the value of a property
 - this helps set the value to private attributes in a class
+
+
+```python
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+    @property
+    def get_age(self):
+        return self._age
+
+
+    @get_age.setter
+    def get_age(self, val):
+        if val > 5:
+            self.age = val
+
+puppy = Dog()
+print(puppy.desc) # versus doing puppy.desc()
+```
