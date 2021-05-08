@@ -30,7 +30,7 @@
 - range()
 
 ### Sets
-- sets are unordered
+- sets are unordered, hashable objects.
 - every element is unique, no duplicates are allowed
 - a set may be modified, but the elements in the set must be immutable type
 
@@ -100,6 +100,7 @@ a - b - c # {1, 2, 3}
 
 ### Lists
 - a collection of arbitrary objects, similar to an array
+- lists are ordered and mutable
 
 #### important notes
 - lists are ordered
@@ -128,6 +129,7 @@ a - b - c # {1, 2, 3}
 
 ### Tuples
 - also a collection of ordered arbitrary objects
+- ordered and immutable
 
 #### important notes
 - tuples are defined in parenthesis instead of square brackets
@@ -140,6 +142,7 @@ a - b - c # {1, 2, 3}
 - sometimes you don't want data to be modified
 
 ### Dictionaries
+- collections of hashable keys that reference an object/value.
 - a key:value pair similar to an object.
 - the key must be unique.
 - the key must also be of a type that is immutable
