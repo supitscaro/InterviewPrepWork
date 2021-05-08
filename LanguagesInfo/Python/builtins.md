@@ -70,6 +70,9 @@ print(list(enumerated_grocery))
 - returns True if at least one element of an iterable is true
 - returns False if all elements are false or if an iterable is empty
 
+- when it comes to dictionaries, if all keys are not false or the dictionary is empty, any() returns False.
+- if at least one key is true, any() returns True
+
 ```python
 # returns True because 1, 3, and 2 is true
 lst = [1, 3, 2, 0]
