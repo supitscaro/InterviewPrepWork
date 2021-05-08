@@ -18,6 +18,17 @@
 - boolean
 - float
 
+### Values considered Falsy
+- 0, 0.0, 0j
+- ""
+- False
+- None
+- []
+- ()
+- {}
+- set()
+- range()
+
 ### Sets
 - sets are unordered
 - every element is unique, no duplicates are allowed
