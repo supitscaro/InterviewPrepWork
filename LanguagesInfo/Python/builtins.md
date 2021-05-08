@@ -87,7 +87,7 @@ print(any(lst3))
 string = "This is a test"
 print(any(string))
 
-# returns False because 0 is falsy
+# returns True because a string of 0 is true
 string2 = "0"
 print(any(string2))
 
@@ -110,4 +110,43 @@ print(any(d2))
 # returns false because it's an empty dict
 d3 = {}
 print(any(d3))
+```
+### All
+- takes an iterable such as list, tuple, dictionary
+- returns true if *all* elements are true
+- returns false if *any* elements are false
+
+- all values are true => return is true
+- all values are false => return is false
+- one value is true => return is false
+- one value is false => return is false
+- empty iterable => true
+    - the reason an empty iterable returns true is because there are no values that DON'T satisfy the condition, so all() returns a true value
+
+- when it comes to dictionaries, if all keys are true, all() returns true.
+
+```python
+# returns false because one value is false (0)
+lst = [1, 2, 3, 0]
+print(all(lst))
+
+# returns true because there are no values that don't satisfy the condition
+lst2 = []
+print(all(lst2))
+
+# returns true
+string = "This works"
+print(all(string))
+
+# returns true
+string2 = "0"
+print(all(string2))
+
+# returns true
+string3 = ""
+print(all(string3))
+
+# returns true
+d = {'0': 'True'}
+print(all(d))
 ```
