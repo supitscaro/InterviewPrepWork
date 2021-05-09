@@ -26,6 +26,8 @@ print(res)
 
 ### Map
 - applies a function to all items in a list
+- will return a new iterable that contains each item returned from the function parameter
+- the return value can be passed to list(), set(), etc to return that specific type
 
 #### without map function
 ```python
