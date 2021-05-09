@@ -129,7 +129,7 @@ a - b - c # {1, 2, 3}
 
 ### Tuples
 - also a collection of ordered arbitrary objects
-- ordered and immutable
+- ordered and mutable
 
 #### important notes
 - tuples are defined in parenthesis instead of square brackets
@@ -142,7 +142,7 @@ a - b - c # {1, 2, 3}
 - sometimes you don't want data to be modified
 
 ### Dictionaries
-- collections of hashable keys that reference an object/value.
+- ordered and mutable
 - a key:value pair similar to an object.
 - the key must be unique.
 - the key must also be of a type that is immutable
