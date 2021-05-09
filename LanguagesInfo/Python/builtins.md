@@ -2,6 +2,8 @@
 - this function takes two arguments:
     - function: can be a predefined function; most of the times it's a lambda function
     - iterable: an iterable object such as a list, tuple, dict
+- the function passed in will return a boolean
+- filter() will return a new iterable with each item from the iterable
 
 #### using a lambda function
 ```python
