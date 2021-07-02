@@ -23,7 +23,7 @@
 HOME_TEAM = 1
 
 
-def tournamenWinner(competitions, results):
+def tournamentWinner(competitions, results):
     best_team = ""
     scores = {best_team: 0}
 
