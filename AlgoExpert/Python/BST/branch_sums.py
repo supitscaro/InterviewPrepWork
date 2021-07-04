@@ -9,6 +9,19 @@
 
 # PSEUDOCODE
 # create a sums variable containing an empty list
+# create a helper function
+
+# helper function:
+# should take the root, starting sum = 0, and sums
+# current_sum = starting sum + node.value
+# solve this recursively so,
+# if root is None:
+# return
+# if node.left is None and node.right is None:
+# sums.append(node)
+
+# helper function(node.left, current_sum, sums)
+# helper function(node.right, current_sum, sums)
 
 
 class BinaryTree:
@@ -19,4 +32,20 @@ class BinaryTree:
 
 
 def branchSums(root):
-    pass
+    sums = []
+
+    return branchSumsHelper(root, 0, sums)
+
+
+def branchSumsHelper(node, starting_sum, sums):
+    if node is not None:
+        return
+
+    current_sum = starting_sum + node.value
+
+    if node.left is None and node.right is None:
+        sums.append(current_sum)
+        return
+
+    branchSumsHelper(node.left, current_sum, sums)
+    branchSumsHelper(node.right, current_sum, sums)
