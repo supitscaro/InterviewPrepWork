@@ -3,4 +3,17 @@
 # and should return its index if it is, otherwise -1
 
 # INPUTS/OUTPUTS
-# array = [0, 1, 21, 33, 45, 45, 61, 71, 72, 73], target = 33 => 3
+#   array = [0, 1, 21, 33, 45, 45, 61, 71, 72, 73], target = 33 => 3
+
+# NOTES/PSEUDOCODE
+#   we can do binary search by splitting the array in half
+#   we can create pointers to help us figure out the middle point
+#   we're gonna want to solve this recursively, so we can create a helper function
+#   we can do a loop while left <= right
+#       create a variable for our possible match and use the middle variable to get the num in that index
+#       if possible match == target
+#           return middle
+#       elif possible_match > target
+#           left = middle - 1
+#       elif possible_match < target
+#           right = middle + 1
