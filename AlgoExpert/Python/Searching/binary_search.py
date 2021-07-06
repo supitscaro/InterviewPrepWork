@@ -17,3 +17,19 @@
 #           left = middle - 1
 #       elif possible_match < target
 #           right = middle + 1
+
+def binarySearch(array, target):
+    return binarySearchHelper(array, target, 0, len(array) - 1)
+
+
+def binarySearchHelper(array, target, left, right):
+    while left <= right:
+        middle = (left + right) // 2
+        possible_match = array[middle]
+
+        if possible_match == target:
+            return middle
+        elif possible_match > target:
+            left = middle - 1
+        elif possible_match < target:
+            right = middle + 1
