@@ -9,3 +9,20 @@
 
 # therefore, the product sum of [x, y] is x + y; the product sum of [x, [y, z]] is x + 2 * (y + z); the product sum of
 # [x, [y, [z]]] is x + 2 * (y + 3z)
+
+# NOTES
+#    we have to check somehow if the current element we're on is an integer or an array
+#    if the element is a "special" array, then the product is the sum of all its elements
+#       if the special arrays have special arrays inside of them, they are summed and
+#       then multiplied by their level of depth
+#       keep in mind: the outer array is the first level, anything inside that is +1 level
+#    since we have nested arrays, we could solve this recursively
+
+def productSum(array, multiplier=1):
+    sum = 0
+    for element in array:
+        if type(element) is list:
+            sum += productSum(element, multiplier + 1)
+        else:
+            sum += element
+    return sum * multiplier
