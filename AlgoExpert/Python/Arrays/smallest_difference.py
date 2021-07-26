@@ -6,7 +6,7 @@
 #   arrayOne = [-1, 5, 10, 20, 28, 3], arrayTwo = [26, 134, 135, 15, 17] => [28, 26]
 
 # NOTES
-#
+#   we can sort both arrays, create an index variable for each array
 
 def smallest_difference(array_one, array_two):
     array_one.sort()
