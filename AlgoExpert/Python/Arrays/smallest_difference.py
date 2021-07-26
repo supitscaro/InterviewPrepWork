@@ -1,6 +1,12 @@
-# write a function that takes in two non-empty arrays of integers, finds the pair of numbers (one from each array) whose absolute difference is closest to zero,
+# write a function that takes in two non-empty arrays of integers, finds the pair of numbers (one from each array)
+# whose absolute difference is closest to zero,
 # and returns an array containing these two numbers, with the number from the first array in the first position
 
+# INPUTS/OUPUTS
+#   arrayOne = [-1, 5, 10, 20, 28, 3], arrayTwo = [26, 134, 135, 15, 17] => [28, 26]
+
+# NOTES
+#
 
 def smallest_difference(array_one, array_two):
     array_one.sort()
