@@ -18,11 +18,11 @@ def find_averages_of_subarray(K, arr):
     result = []
     window_sum, window_start = 0.0, 0
     for window_end_idx in range(len(arr)):
-        window_sum += arr[window_end_idx]
+        window_sum += arr[window_end_idx] # add values to window_sum
 
-        if window_end >= K - 1:
-            result.append(window_sum / K)
-            window_sum -= arr[window_start]
+        if window_end_idx >= K - 1: # loop through until index is 4
+            result.append(window_sum / K) # append sum / k to result
+            window_sum -= arr[window_start] # subtract the start value
             window_start += 1
 
     return result
