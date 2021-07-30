@@ -15,4 +15,5 @@
 #       the longest substring with no more than '3' distinct characters are 'cbbeb' and 'bbebi'
 
 def longest_substring_with_k_distinct(str1, k):
-    pass
+    max_substring = 0
+    window_substring_length = 0
