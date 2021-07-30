@@ -23,19 +23,28 @@
 #   we will also try to shrink the window from the beginning. we will do this until the window's sum is smaller than S again. we need this to find the smallest window. the shrinking has to happen in multiple steps:
 #       check if current window length is smallest so far, and if it is, remember its length
 #       subtract first element of the window from the running sum to shrink the sliding window
+import math
+
 
 def smallest_subarray_with_given_sum(s, arr):
     min_length = math.inf
     window_start, window_sum = 0, 0
 
-    for idx in range(len(arr)):
-        min_length += arr[idx]
+    for window_end in range(0, len(arr)):
+        window_sum += arr[window_end]
 
-        while idx >= s:
-            min_length = min(min_length, idx - window_start + 1)
+        while window_sum >= s:
+            min_length = min(min_length, window_end - window_start + 1)
             window_sum -= arr[window_start]
             window_start += 1
-        if min_length == math.inf:
-            return 0
+    if min_length == math.inf:
+        return 0
 
     return min_length
+
+# TIME COMPLEXITY
+#   O(n)
+#   the outer for loop runs for all elements, and inner while loop process each element only once
+
+# SPACE COMPLEXITY
+#   O(1)
