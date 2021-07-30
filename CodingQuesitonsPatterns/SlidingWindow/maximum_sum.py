@@ -24,3 +24,9 @@ def max_sub_array_of_size_k(k, arr):
             window_start += 1
 
     return max_sum
+
+# TIME COMPLEXITY
+#   O(n)
+
+# SPACE COMPLEXITY
+#   O(1)
