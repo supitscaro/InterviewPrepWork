@@ -27,5 +27,27 @@
 
 
 def longest_substring_with_k_distinct(str1, k):
-    max_substring = 0
-    window_substring_length = 0
+    max_length = 0
+    window_start = 0
+    character_frequency = {}
+
+    # Add character to dictionary if it's not there and if it is, increment by 1
+    for window_end in range(len(str1)):
+        right_char = str1[window_end]
+        if right_char not in character_frequency:
+            character_frequency[right_char] = 0
+        character_frequency += 1
+
+        # check if our dict has more than K characters
+        while len(character_frequency) > k:
+            left_char = str1[window_start]
+            character_frequency[left_char] -= 1
+
+            if character_frequency[left_char] == 0:
+                del character_frequency[left_char]
+
+            window_start += 1  # shrinking the window from the beginning
+
+        max_length = max(max_length, window_end - window_start + 1)
+
+    return max_length
