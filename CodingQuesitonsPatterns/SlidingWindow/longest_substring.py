@@ -36,7 +36,7 @@ def longest_substring_with_k_distinct(str1, k):
         right_char = str1[window_end]
         if right_char not in character_frequency:
             character_frequency[right_char] = 0
-        character_frequency += 1
+        character_frequency[right_char] += 1
 
         # check if our dict has more than K characters
         while len(character_frequency) > k:
