@@ -27,7 +27,7 @@ import math
 
 
 def smallest_subarray_with_given_sum(s, arr):
-    min_length = math.inf
+    min_length = float("inf")
     window_start, window_sum = 0, 0
 
     for window_end in range(0, len(arr)):
@@ -37,7 +37,7 @@ def smallest_subarray_with_given_sum(s, arr):
             min_length = min(min_length, window_end - window_start + 1)
             window_sum -= arr[window_start]
             window_start += 1
-    if min_length == math.inf:
+    if min_length == float("inf"):
         return 0
 
     return min_length
