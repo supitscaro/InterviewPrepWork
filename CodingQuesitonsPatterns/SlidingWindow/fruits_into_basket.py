@@ -35,3 +35,4 @@ def fruits_into_baskets(fruits):
         max_length = max(max_length, window_end - window_start + 1)
 
     return max_length
+
