@@ -33,21 +33,59 @@ def longest_substring_with_k_distinct(str1, k):
 
     # Add character to dictionary if it's not there and if it is, increment by 1
     for window_end in range(len(str1)):
+        # print(window_end)
         right_char = str1[window_end]
         if right_char not in character_frequency:
             character_frequency[right_char] = 0
         character_frequency[right_char] += 1
 
+        print('before loop', character_frequency)
+
         # check if our dict has more than K characters
-        while len(character_frequency) > k:
+        if len(character_frequency) > k:
             left_char = str1[window_start]
+            print('left char', str1[window_start])
             character_frequency[left_char] -= 1
 
             if character_frequency[left_char] == 0:
                 del character_frequency[left_char]
 
             window_start += 1  # shrinking the window from the beginning
+            print('         while loop', character_frequency)
 
         max_length = max(max_length, window_end - window_start + 1)
 
     return max_length
+
+
+longest_substring_with_k_distinct("araaci", 2)
+
+# WITH WHILE LOOP:
+
+# before loop {'a': 1}
+# before loop {'a': 1, 'r': 1}
+# before loop {'a': 2, 'r': 1}
+# before loop {'a': 3, 'r': 1}
+# before loop {'a': 3, 'r': 1, 'c': 1}
+# left char a
+#          while loop {'a': 2, 'r': 1, 'c': 1}
+# left char r
+#          while loop {'a': 2, 'c': 1}
+# before loop {'a': 2, 'c': 1, 'i': 1}
+# left char a
+#          while loop {'a': 1, 'c': 1, 'i': 1}
+# left char a
+#          while loop {'c': 1, 'i': 1}
+
+# WITH IF STATEMENT:
+
+# before loop {'a': 1}
+# before loop {'a': 1, 'r': 1}
+# before loop {'a': 2, 'r': 1}
+# before loop {'a': 3, 'r': 1}
+# before loop {'a': 3, 'r': 1, 'c': 1}
+# left char a
+#          while loop {'a': 2, 'r': 1, 'c': 1}
+# before loop {'a': 2, 'r': 1, 'c': 1, 'i': 1}
+# left char r
+#          while loop {'a': 2, 'c': 1, 'i': 1}

@@ -23,7 +23,6 @@
 #   we will also try to shrink the window from the beginning. we will do this until the window's sum is smaller than S again. we need this to find the smallest window. the shrinking has to happen in multiple steps:
 #       check if current window length is smallest so far, and if it is, remember its length
 #       subtract first element of the window from the running sum to shrink the sliding window
-import math
 
 
 def smallest_subarray_with_given_sum(s, arr):
