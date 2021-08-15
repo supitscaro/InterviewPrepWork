@@ -25,6 +25,7 @@ class TreeNode:
                 if current_node.right:
                     queue.append(current_node.right)
 
+            # do result.extend(current_level) to flatten results
             result.append(current_level)
 
         return result
