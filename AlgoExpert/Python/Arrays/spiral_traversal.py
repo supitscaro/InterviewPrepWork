@@ -21,4 +21,34 @@
 
 
 def spiralTraverse(array):
-    pass
+    res = []
+
+    row_start, row_end = 0, len(array) - 1
+    col_start, col_end = 0, len(array[0]) - 1
+
+    while row_start <= row_end and col_start <= col_end:
+        # [1, 2, 3, 4]
+        for col in range(col_start, col_end + 1):
+            res.append(array[row_start][col])
+
+        # [5, 6, 7]
+        for row in range(row_start + 1, row_end + 1):
+            res.append(array[row][col_end])
+
+        # [10, 9, 8]
+        for col in reversed(range(col_start, col_end)):
+            if row_start == row_end:
+                break
+            res.append(array[row_end][col])
+
+        for row in reversed(range(row_start + 1, row_end)):
+            if col_start == col_end:
+                break
+            res.append(array[row][col_start])
+
+        row_start += 1
+        row_end -= 1
+        col_start += 1
+        col_end -= 1
+
+    return res
